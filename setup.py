@@ -31,6 +31,7 @@ EXCLUDE_FROM_PACKAGES = ['django.conf.project_template',
 # Dynamically calculate the version based on django.VERSION.
 version = __import__('django').get_version()
 
+#Start the setup
 
 setup(
     name='Django',
@@ -72,6 +73,7 @@ setup(
     ],
 )
 
+#Warning
 
 if overlay_warning:
     sys.stderr.write("""
